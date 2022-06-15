@@ -55,11 +55,15 @@ In order to understand what topics people were tweeting about, I ran topic-model
 #### Sequential approach:
     * LSTM and CNN
 
-#### Model Performance 
-Overall models with bag of words approach performed better. The best models are:
+### Model Performance 
+Overall, models with bag of words approach performed better. The best models are:
 
-* Bag of words approach: Naive Bayes (F1-score= 88%) and Random Forest(F1-score=87%)
-* Sequential approach: CNN (F1-score= 66%)
+#### Bag of words approach: 
+* Naive Bayes (F1-score= 88%)
+*  Random Forest(F1-score=87%)
+
+#### Sequential approach
+* CNN (F1-score= 66%)
 
 ## Insights
 #### Based on Logistic Regression Coefficient, the top 8 words that increase the chance of a tweet being classified as offensive are:
