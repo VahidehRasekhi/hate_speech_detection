@@ -41,29 +41,35 @@ https://github.com/ManishShettyM/Offensive-Text-Detection
 ### 1. Unsupervised Learning
 #### Topic Modeling 
 In order to understand what topics people were tweeting about, I ran topic-modeling, which automatically analyzes text data to determine cluster words for a a set of tweets. The results showed that in general, we have 3 topics: 
-* left wing politics, blm 
+* left wing politics, black lives matter (blm)
 * Trump, white establishment
 * Racisim, Islam
 
 ### 2. Supervised Learning:
 #### Bag of words/Count vectorizer approach:
     * Naive Bayes
+    * Random Forest
     * Logistic Regression
-    * Random Forest 
     * Decision Tress
      
 #### Sequential approach:
-    * LSTM and CNN
+    * Long Short-term Memory (LSTM)
+    * Convolutional Neural Network (CNN)
 
 ### Model Performance 
 Overall, models with bag of words approach performed better. The best models are:
 
 #### Bag of words approach: 
 * Naive Bayes (F1-score= 88%)
-*  Random Forest(F1-score=87%)
+* Random Forest(F1-score=87%)
+* Logistic Regression (F1-score= 71%)
+* Decision Trees (F1-score= 35%)
+
 
 #### Sequential approach
 * CNN (F1-score= 66%)
+* LSTM (F1-score= 62%)
+* CNN/LSTM (F1-score= 61%)
 
 ## Insights
 #### Based on Logistic Regression Coefficient, the top 8 words that increase the chance of a tweet being classified as offensive are:
